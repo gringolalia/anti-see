@@ -5,16 +5,18 @@ div
 			img(src='../assets/biohazard.svg', width="100px;")
 			sui-header.dignity(size="huge" style="margin-top: 0px;") Adeus, Mundo Imundo
 			sui-header.dignity(size="large") Bom Dia, Meia-Noite
-			a.ui.huge.secondary.button.dignity(to="/syntax")
-				i.material-icons(size="huge" style="margin-right: 12px") settings_input_antenna
-				| Semiotic Interface
-			sui-header.medium.dignity A Linguistic Linguiça
+
+			sui-popup(content="Inversion or perversion or an alternative version?" position="bottom center" size="large" inverted)
+				a.ui.huge.secondary.button.dignity(to="/syntax"  @click.native='toggle')
+					i.material-icons(size="huge" style="margin-right: 12px") waves
+					| Semiotic You Eye View
+			sui-hidden-divider
 			sui-hidden-divider
 			sui-hidden-divider
 			sui-hidden-divider
 
 		sui-grid(:columns='3', divided='' verticalAlign="middle")
-			sui-grid-row(stretched='')
+			sui-grid-row(stretched)
 				sui-grid-column
 					sui-segment
 						sui-icon(name="chess" size="massive")
@@ -40,29 +42,52 @@ div
 
 		//- Get Modal Layout Right
 
-		sui-modal.with.dignity(size='small' v-model='open')
+		sui-modal(id="	" size="tiny" v-model='open' animation="fade up")
 			sui-modal-header.sui-display-2.with.dignity Ordering an Allen Ginsberger
 
 			sui-modal-content(scrolling image)
 				sui-image(wrapped size='small' src='../../static/ginsbergo.jpg' style="filter: grayscale(100%)")
-					sui-modal-description
-						sui-header Bearded Fiends of the Fifties!
-						//- p Μνεσαρcηθμ cοτιδιεqθε αδ μελ. Μεα νατθμ ινvιδθντ ατ. Ετ vιμ μελιθσ ελοqθεντιαμ. Τολλιτ σεντεντιαε ηισ νε, qθι ρεqθε διcαμ ταμqθαμ ιν, αφφερτ δισπθτανδο εθμ cθ.
+				sui-modal-description
+					sui-header.with.dignity Bearded Fiends of the Fifties
+					p Μνεσαρcηθμ cοτιδιεqθε αδ μελ. Μεα νατθμ ινvιδθντ ατ. Ετ vιμ μελιθσ ελοqθεντιαμ. Τολλιτ σεντεντιαε ηισ νε, qθι ρεqθε διcαμ ταμqθαμ ιν, αφφερτ δισπθτανδο εθμ cθ.
 
 			sui-modal-actions
 				sui-button.with.dignity(secondary size='large' @click.native='toggle')
 					| If You Must Then Do
+
+
+		sui-modal(id="modal2" size="tiny" v-model='open2' animation="fade up")
+			sui-modal-header.sui-display-2.with.dignity 
+				i.fas.fa-sun.fa-2x
+				| &nbsp;&nbsp;On the Road With Rolling Thunder
+
+			sui-modal-content(scrolling image)
+				sui-image(wrapped size='small' src='../../static/ginsbergo.jpg' style="filter: grayscale(100%)")
+				sui-modal-description
+					sui-header.with.dignity Bringing Home the Om 
+					p Μνεσαρcηθμ cοτιδιεqθε αδ μελ. Μεα νατθμ ινvιδθντ ατ. Ετ vιμ μελιθσ ελοqθεντιαμ. Τολλιτ σεντεντιαε ηισ νε, qθι ρεqθε διcαμ ταμqθαμ ιν, αφφερτ δισπθτανδο εθμ cθ.
+
+			sui-modal-actions
+				sui-button.with.dignity(secondary size='large' @click.native='toggle')
+					| Faça Se Quiser
+
+
 </template>
 
 <script>
+
 export default {
 	name: 'ScrollingModalExample',
 	data() {
-		return { open: false };
+		return { 
+			open: false,
+			open2: false
+			};
 	},
 	methods: {
 		toggle() {
 			this.open = !this.open;
+			this.open2 = !this.open2;
 		},
 	},
 };

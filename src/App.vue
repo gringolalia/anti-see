@@ -2,41 +2,40 @@
 #apps
 	sui-menu.dignity(fixed='top' borderless)
 		sui-menu-item.dignity(active link='/' name='Principio' style="font-size: 18px;")
-			i.fa.fa-gears.fa-2x
+			i.fas.fa-cogs.fa-2x
 			| &nbsp; &nbsp;Engenho Novo LLC
 
 		sui-menu-item(name='Principio' link='/') In Principio
-		sui-menu-item(name='Perpateia' link='/syntax') Peripateia
-		sui-menu-item(name='Hamartia' link='/pragmatics') Hamartia
-		sui-menu-item(name='Anagnorisis' link='/semantics', floated='right') Anagnorisis
+		sui-menu-item(name='Perpateia' link='/syntax') In Media Res
+		sui-menu-item(name='Hamartia' link='/pragmatics') Festina Lente
 		sui-menu-item
-			sui-dropdown(text='Hubris')
+			sui-dropdown(text='Tragoedia')
 				sui-dropdown-menu
 					sui-dropdown-item
 						sui-icon(name='plane')
-						| Macedon
+						| Mimesis
 					sui-dropdown-item
 						sui-icon(name='ship')
-						| Athens
+						| Hamartia
 					sui-dropdown-item
 						sui-icon(name='tty')
-						| Syracuse
+						| Anagnorisis
 					sui-dropdown-item
 						sui-icon(name='wrench')
-						| Sparta
+						| Mythos
 					sui-dropdown-item
 						sui-icon(name='sun')
-						| Corinth
+						| Katharsis
 					sui-dropdown-item
 						sui-icon(name='chess')
-						| Thebes
+						| Peripeteia
 					sui-dropdown-item
 						sui-icon(name='moon')
-						| Rhodes
+						| Lusis
 					sui-dropdown-divider
 					sui-dropdown-item
 						sui-icon(name='plug')
-						| Argos
+						| Desis
 
 
 	router-view
