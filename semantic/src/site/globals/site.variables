@@ -1,0 +1,14 @@
+/*******************************
+     User Global Variables
+*******************************/
+@fontName:         : 'News Cycle';
+@headerFont        : 'News Cycle', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : 'News Cycle', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@googleFontFamily  : 'News+Cycle|Material+Icons';
+
+@blue: #607D8B;
+@green: #78CB5B;
+@orange: #D26911;
+@black: #333333;
+@primaryColor: @blue;
+@secondaryColor: @black;

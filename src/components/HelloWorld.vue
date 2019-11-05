@@ -7,7 +7,7 @@ div
 			sui-header.dignity(size="large") Bom Dia, Meia-Noite
 
 			sui-popup(content="Inversion or perversion or an alternative version?" position="bottom center" size="large" inverted)
-				a.ui.huge.secondary.button.dignity(to="/syntax"  @click.native='toggle')
+				a.ui.huge.primary.button.with.dignity(to="/syntax"  @click.native='toggle')
 					i.material-icons(size="huge" style="margin-right: 12px") waves
 					| Semiotic You Eye View
 			sui-hidden-divider
@@ -15,7 +15,7 @@ div
 			sui-hidden-divider
 			sui-hidden-divider
 
-		sui-grid(:columns='3', divided='' verticalAlign="middle")
+		sui-grid(:columns='3' divided verticalAlign="middle" style="margin-top: 54px")
 			sui-grid-row(stretched)
 				sui-grid-column
 					sui-segment
@@ -38,7 +38,7 @@ div
 						sui-icon(name="chess" size="huge")
 
 	.ui.center.aligned.middle.aligned.text.container(style="margin: 25px 25px")
-		sui-button.with.dignity(secondary content='Go Modal' icon='chess' size='huge' @click.native='toggle')
+		sui-button.with.dignity(primary content='Go Modal' icon='chess' size='huge' @click.native='toggle')
 
 		//- Get Modal Layout Right
 

@@ -1,7 +1,7 @@
 <template lang="pug">
 #apps
-	sui-menu.dignity(fixed='top' borderless)
-		sui-menu-item.dignity(active link='/' name='Principio' style="font-size: 18px;")
+	sui-menu.dignity(fixed='top' borderless inverted)
+		sui-menu-item.dignity( link='/' name='Principio' style="font-size: 18px;")
 			i.fas.fa-cogs.fa-2x
 			| &nbsp; &nbsp;Engenho Novo LLC
 
@@ -71,24 +71,29 @@ export default {
 }
 
 	<style>
-		body, html, .ui, .sui  {
-			font-family: 'News Cycle', sans-serif !important;
-			font-weight: 300 !important;
-			height: 100%;
-		}
+    body, html, .ui, .suis {
+      font-family: 'News Cycle', sans-serif !important;
+      font-weight: 300;
+    }
 
-		h1, h2, h3, h4, h5, h6 {
-			font-family: 'News Cycle', sans-serif !important;
-			font-weight: 300 !important
-		}
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "News Cycle", sans-serif !important;
+      font-weight: 300;
+    }
 
-		.dignity {
-			font-family: "News Cycle", sans-serif !important;
-			font-weight: 300 !important;
-		}
+    .headline {
+      font-family: 'News Cycle', sans-serif !important;
+      font-size: 25px;
+    }
 
-		.material-icons, .fa {
-			vertical-align: middle;
-		}
+    .dignity {
+      font-family: 'News Cycle', sans-serif !important;
+      font-weight: 300 !important;
+    }
+
+    i, .material-icons, .fas {
+      vertical-align: middle;
+    }
+
 
 </style>
