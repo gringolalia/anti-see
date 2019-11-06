@@ -8,7 +8,8 @@
     "heroku-prebuild": "npm install --dev",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "heroku-postbuild": "webpack --config webpack.prod.js"
   },
   "dependencies": {
     "portal-vue": "^2.1.6",
