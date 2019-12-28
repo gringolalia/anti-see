@@ -35,8 +35,7 @@
 					sui-dropdown-divider
 					sui-dropdown-item
 						sui-icon(name='plug')
-						| Desis
-
+							| Desis
 
 	router-view
 </template>

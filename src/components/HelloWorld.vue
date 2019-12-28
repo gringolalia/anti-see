@@ -6,10 +6,7 @@ div
 			sui-header.dignity(size="huge" style="margin-top: 0px;") Adeus, Mundo Imundo
 			sui-header.dignity(size="large") Bom Dia, Meia-Noite
 
-			sui-popup(content="Inversion or perversion or an alternative version?" position="bottom center" size="large" inverted)
-				a.ui.huge.primary.button.with.dignity(to="/syntax"  @click.native='toggle')
-					i.material-icons(size="huge" style="margin-right: 12px") waves
-					| Semiotic You Eye View
+			sui-button.with.dignity(primary content='Go Modal' icon='chess' size='huge' @click.native='toggle')
 			sui-hidden-divider
 			sui-hidden-divider
 			sui-hidden-divider
@@ -38,7 +35,7 @@ div
 						sui-icon(name="chess" size="huge")
 
 	.ui.center.aligned.middle.aligned.text.container(style="margin: 25px 25px")
-		sui-button.with.dignity(primary content='Go Modal' icon='chess' size='huge' @click.native='toggle')
+
 
 		//- Get Modal Layout Right
 
@@ -72,7 +69,29 @@ div
 					| Faça Se Quiser
 
 
+
+		sui-dropdown.labeled.icon(icon='file' button text='Swaptions au Gogo')
+			sui-dropdown-menu
+				sui-dropdown-item New
+				sui-dropdown-item
+					| Open ... 
+					span.description ctrl + o
+				sui-dropdown-item
+					| Save as... 
+					span.description ctrl + s
+				sui-dropdown-item
+					| Rename 
+					span.description ctrl + r
+				sui-dropdown-item Make a copy
+				sui-dropdown-item
+					sui-icon(name='folder') Move to folder
+				sui-dropdown-item
+					sui-icon(name='trash') Move to trash
+				sui-dropdown-divider
+					sui-dropdown-item Download as...
+
 </template>
+
 
 <script>
 
@@ -90,6 +109,12 @@ export default {
 			this.open2 = !this.open2;
 		},
 	},
+};
+</script>
+
+<script>
+export default {
+  name: 'DropdownExample',
 };
 </script>
 

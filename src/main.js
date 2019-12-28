@@ -5,11 +5,11 @@ import App from './App'
 import router from './router'
 import SuiVue from 'semantic-ui-vue'
 import '../semantic/dist/semantic.min.css'
-// import 'semantic-ui-css/semantic.css'
-// import PortalVue from 'portal-vue'
+import 'semantic-ui-css/semantic.css'
+import PortalVue from 'portal-vue'
 
 Vue.use(SuiVue)
-// Vue.use(PortalVue)
+Vue.use(PortalVue)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
